@@ -1,6 +1,6 @@
 <h2>Tech Stack</h2>
 <ul>
-    <li>Client: React JS</li>
+    <li>Client: React JS,JavaScript,TailWind CSS, Daisy UI</li>
     <li>Server: Node JS, Express JS</li>
     <li>Database: Mongo DB</li>
 </ul>
@@ -28,32 +28,45 @@
 
 <h2>Features</h2>
 <h3>Authentication</h3>
-<img width="1906" height="912" alt="Login page" src="https://github.com/user-attachments/assets/3e662784-a4a0-413b-8929-f6d60d66530b" />
-<img width="1916" height="909" alt="SignUp Page" src="https://github.com/user-attachments/assets/5aceda39-0187-4e39-8a05-69d7c92e3709" />
+<img width="1912" height="895" alt="Streamify Sign In Page" src="https://github.com/user-attachments/assets/262229c6-539e-4bdd-97cc-51a1e5841eb7" />
+<img width="1917" height="902" alt="Streamify Sign Up Page" src="https://github.com/user-attachments/assets/511a0497-10fc-48af-a746-fe1bb07d5560" />
+<img width="1907" height="906" alt="Streamify Onboarding Page" src="https://github.com/user-attachments/assets/a20f64b9-c44e-4377-8e76-c78c93eb34e6" />
+
+
 
 <h3>App Features:</h3>
 <h3>Chat Home Page</h3>
-<img width="1918" height="898" alt="Dashboard" src="https://github.com/user-attachments/assets/7a0cc27a-5f0c-4cce-889d-1f86e4207a49" />
+<img width="1915" height="902" alt="Streamify Home Page" src="https://github.com/user-attachments/assets/52a54d89-76f3-4d44-a76a-20eed08a89e1" />
+
 
 
 <h3>Friends Page</h3>
-<img width="1908" height="897" alt="Income tab" src="https://github.com/user-attachments/assets/86f0e585-65b8-4755-b71a-4aa49fb3cb3f" />
+<img width="1912" height="897" alt="Streamify Friends Page" src="https://github.com/user-attachments/assets/730910aa-6c16-4b82-b418-c0b6b4c0fde1" />
+
 
 
 
 
 <h3>Notifications Page</h3>
-<img width="1898" height="880" alt="Customizable Income Form" src="https://github.com/user-attachments/assets/dd8e70f8-1b1c-448d-a5e8-d631dfd3f2fb" />
+<img width="1758" height="857" alt="Streamify Notifications Page" src="https://github.com/user-attachments/assets/88a2298e-104f-4e5f-bc8e-8abae98baf85" />
+
 
 
 
 <h3>One-to-One Chat Page</h3>
-<img width="1881" height="896" alt="expense with chart" src="https://github.com/user-attachments/assets/fd7ada89-5d00-4de0-ab36-1241b92370d1" />
+<img width="1885" height="897" alt="End-to-End encrypted Chat" src="https://github.com/user-attachments/assets/24c970ce-0d96-43da-a087-15551dae5d1a" />
+
 
 
 
 <h3>Call Page</h3>
-<img width="595" height="482" alt="expense popup" src="https://github.com/user-attachments/assets/8a0ac9ea-c053-4163-8b70-072a57928eff" />
+<img width="1907" height="892" alt="End-to-End Video Call and Also Share Screen" src="https://github.com/user-attachments/assets/e43593c4-e180-4296-a72d-f30bf5b8ffa1" />
+
+<h3>Theme Selector</h3>
+<img width="1836" height="482" alt="Different Theme Select Streamify" src="https://github.com/user-attachments/assets/5c1c0bd1-4705-403b-badc-b330bf35b158" />
+
+<h3>Side Bar</h3>
+<img width="307" height="908" alt="Sidebar Stream functionality" src="https://github.com/user-attachments/assets/474b4ab5-7b0d-46d3-98d5-6418903d4d7b" />
 
 
 
