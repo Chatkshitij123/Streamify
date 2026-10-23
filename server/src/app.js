@@ -29,6 +29,17 @@ app.use(express.static("public"));
 
 app.use(cookieParser());
 
+// Health check route
+app.get("/health", (req, res) => {
+    res.status(200).json({
+        success: true,
+        status: "OK",
+        message: "Chat application backend is running",
+        uptime: process.uptime(),
+        timestamp: new Date().toISOString()
+    });
+});
+
 //routes import
 
 import authRouter from "./routes/auth.routes.js"
