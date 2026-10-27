@@ -666,6 +666,12 @@
 
 
 import React, { useEffect, useState } from "react";
+import {
+  enablePushNotifications,
+  disablePushNotifications,
+} from "../utils/pushNotifications.js";
+
+import axiosInstance from "../utils/axiosInstance.js";
 import { Link } from "react-router-dom";
 import {
   ArrowLeftIcon,
@@ -881,6 +887,8 @@ const NotificationSettings = () => {
       setPermission(result);
 
       if (result === "granted") {
+        // NEW: Register this browser/device's push subscription.
+  await enablePushNotifications();
         const saved = await updateDeviceEnabled(true);
 
         if (saved) {
