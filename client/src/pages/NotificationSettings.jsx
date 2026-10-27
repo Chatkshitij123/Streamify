@@ -909,8 +909,10 @@ const NotificationSettings = () => {
       console.error("Notification permission error:", error);
 
       setPermissionMessage(
-        "Could not request notification permission. Please try again."
-      );
+  error.response?.data?.message ||
+  error.message ||
+  "Could not enable push notifications."
+);
     }
   };
 
