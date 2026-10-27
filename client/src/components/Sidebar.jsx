@@ -1,13 +1,16 @@
 import React from 'react'
 import useAuthUser from '../hooks/useAuthUser'
 import { Link, useLocation } from 'react-router-dom'
-import { BellIcon, CameraIcon, HomeIcon, ShipWheelIcon, UsersIcon } from 'lucide-react'
+import { BellIcon, CameraIcon, HomeIcon, ShipWheelIcon, UsersIcon,  SettingsIcon,  } from 'lucide-react'
 
 const Sidebar = () => {
   const { authUser } = useAuthUser()
   const location = useLocation();
   const currentPath = location.pathname;
-
+  // NEW: Keep Settings active on its nested pages
+  const isSettingsActive =
+  currentPath === "/settings" ||
+  currentPath.startsWith("/settings/");
   
   return (
     <aside className='w-64 bg-base-200 border-r border-base-300 flex flex-col h-screen sticky top-0'>
@@ -47,6 +50,18 @@ const Sidebar = () => {
         <BellIcon className='size-5 text-base-content opacity-70' />
         <span>Notifications</span>
       </Link>
+
+      <Link
+  to="/settings"
+  className={`btn btn-ghost justify-start w-full gap-3 px-3 normal-case ${
+    isSettingsActive
+      ? "bg-primary text-primary-content shadow-md hover:bg-primary"
+      : ""
+  }`}
+>
+  <SettingsIcon className="size-5" />
+  <span>Settings</span>
+</Link>
 
       </nav>
 

@@ -13,6 +13,8 @@ import PageLoader from "./components/PageLoader"
 import useAuthUser from "./hooks/useAuthUser"
 import Layout from "./components/Layout"
 import { useThemeStore } from "./store/useThemeStore"
+import SettingsPage from "./pages/SettingPage"
+import NotificationSettings from "./pages/NotificationSettings"
 
 
 
@@ -62,6 +64,32 @@ function App() {
              )
              }
               />
+        <Route path="/settings"element={
+    isAuthenticated && isOnboarded ? (
+      <Layout showSidebar={true}>
+        <SettingsPage />
+      </Layout>
+    ) : (
+      <Navigate
+        to={!isAuthenticated ? "/login" : "/onboarding"}
+      />
+    )
+  }
+/>
+<Route
+  path="/settings/notifications"
+  element={
+    isAuthenticated && isOnboarded ? (
+      <Layout showSidebar={true}>
+        <NotificationSettings />
+      </Layout>
+    ) : (
+      <Navigate
+        to={!isAuthenticated ? "/login" : "/onboarding"}
+      />
+    )
+  }
+/>
         <Route path="/call/:id" element={isAuthenticated && isOnboarded ? (
           <CallPage />
         ) : (
